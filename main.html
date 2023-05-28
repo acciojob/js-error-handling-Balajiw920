@@ -1,16 +1,44 @@
 <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Smart Evaluator</title>
+  </head>
+  <body>
+    <style>
+      body {
+        margin: 0;
+        font-family: sans-serif;
+        background: url('https://source.unsplash.com/nDqA4d5NL0k/2000x2000');
+        background-size: cover;
+        display: flex;
+        align-items: center;
+        min-height: 100vh;
+      }
 
-<html>
+      #expression {
+        width: 300px;
+        padding: 10px;
+        margin: 20px auto;
+        font-size: 16px;
+      }
 
-<head>
-	<link rel="stylesheet" href="styles.css">
-</head>
+      #result {
+        text-align: center;
+        font-size: 24px;
+        color: white;
+      }
 
-<body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+      .error {
+        text-align: center;
+        font-size: 18px;
+        color: red;
+      }
+    </style>
 
-</body>
+    <input type="text" id="expression" placeholder="Enter expression" />
+    <div id="result"></div>
 
+    <script src="./script.js"></script>
+  </body>
 </html>
